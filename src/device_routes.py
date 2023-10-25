@@ -1,9 +1,8 @@
 from flask import Blueprint, request, jsonify
 from example_devices import example_devices
+from shared_resources import registered_devices
 
 device_routes = Blueprint('device_routes', __name__)
-
-registered_devices = {}
 
 registered_devices.update(example_devices)
 
